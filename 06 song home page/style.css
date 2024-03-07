@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html body
+{
+  width: 100%;
+  height: 100%;
+  font-family: "Fredoka", sans-serif; 
+}
+
+header
+{
+  width: 100%;
+  background-color: #270082;
+  box-shadow: 0 5px 10px #110234;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.container
+{
+  /* background-color: cyan; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav
+{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav>div>h2
+{
+  color: white;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul>li
+{
+  list-style: none;
+  margin-left: 20px;
+  color: white;
+  transition: border .2s ease;
+  border-radius: 10px;
+}
+
+ul>li>a:hover
+{
+  border-bottom: 2px solid white;
+  transition: border .2s ease;
+}
+
+.top-header>li>a
+{
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+
+.banner
+{
+  height: 100vh;
+  width: 100%;
+  background-image: url(/img/hero_image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text
+{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start ;
+  gap: 20px;
+  color: white;
+}
+
+.banner-heading
+{
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.banner-text>h2
+{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;  
+}
+
+.banner-text>p
+{
+  text-align: center;
+}
+
+.music
+{
+  background-color: #281154;
+  color: white;
+}
+
+.music-text
+{
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start ;
+  gap: 40px;
+}
+
+.music-text
+{
+  color: white;
+  text-align: center;
+}
+
+.music-text2
+{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  gap: 10px;
+}
+
+.music-text-top
+{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.music-text2>i
+{
+  font-size: 1.5rem;
+}
+
+.music-button
+{
+  height: 2rem;
+  padding: 5px 20px;
+  border: none;
+  background-color: #dc0000;
+  color: white;
+  transition: .5s ease;
+}
+
+.music-button:hover
+{
+  background-color: #b10303;
+  transition: .2s ease;
+
+}
+
+.ipad-iphone
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ipad-iphone
+{
+  position: relative;
+  margin-top: -400px;
+  top: 400px;
+}
+
+.imgpp
+{
+  width: 100%;
+}
+
+.music2
+{
+  padding: 400px 10px 40px 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.text-bottom
+{
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.text-bottom>h3
+{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.music2-button
+{
+  height: 2rem;
+  padding: 5px 10px;
+  border: none;
+  background-color: #270082;
+  color: white;
+  transition: .5s ease;
+}
+
+.music2-button:hover
+{
+  background-color: #270082d8;
+  transition: .2s ease;
+
+}
+
+.music2-text
+{
+  font-weight: 300;
+}
+
+.video-bg
+{
+  height: 100vh;
+  position: relative;
+  background-color: #00000075;
+  opacity: .8;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.video-text-container
+{
+  position: relative;
+}
+
+.video-text
+{
+  background-color: red;
+  position: absolute;
+  z-index: 2;
+  top: 50vh;
+  background-color: #270082;
+  border-radius: 10px;
+}
+
+.video-text
+{
+  margin: 5px;
+  padding: 10px;
+  color: white;
+  text-align: center; 
+}
+
+.video-bg-text
+{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;  
+}
+
+.music2-text
+{
+  margin-bottom: 30px;  
+}
+
+.gift-card
+{
+  padding: 50px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  gap: 40px;
+}
+
+.gift-card-img
+{
+  width: 100%;
+}
+
+
+.giftCard-text
+{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center ;
+  gap: 40px;
+}
+
+.giftCard-text>h3
+{
+  font-weight: 500;
+}
+
+.divider
+{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.329);
+  border-radius: 50%;
+}
+
+footer
+{
+  background-color: #1b0058;
+  color: white;
+  font-weight: 300;
+}
+
+.footer-text
+{
+  padding: 50px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+  gap: 40px;
+}
+
+.shop-about
+{
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  border-bottom: 2px solid white;
+}
+
+.ShopLearn>p
+{
+  margin-bottom: 5px;
+}
