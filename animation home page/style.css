@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  --font: #ffc801;
+  --color: White;
+  --textcolor: rgba(0, 0, 0, 0.553);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.textColor{
+  color: var(--textcolor);
+}
+
+header{
+  padding: 5px 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: white;
+  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.322);
+}
+
+.logoBox>i{
+  font-size: 50px;
+  transition: .5s ease-in-out;
+}
+.logoBox>i:hover{
+  color: var(--font);
+}
+
+nav>ul{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 30px;
+}
+
+nav a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.605);
+  font-weight: 300;
+  transition: .2s ease;
+  /* padding: 0 2px;  */
+}
+
+nav a:hover{
+  color: var(--font);
+}
+
+nav>ul .loginSignUp span{
+  margin-left: 30px;
+}
+
+nav>ul li{
+  list-style: none;
+}
+.navBarDropDown{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.loginSignUp .blank{
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  border: 1px solid black;
+  transition: .5s ease;
+}
+
+.loginSignUp .blank:hover{
+  background-color: var(--font);
+  color: white;
+  border: 1px solid transparent;
+}
+
+.loginSignUp>.background{
+  padding: 10px 20px;
+  background-color: var(--font);
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: .5s ease;
+}
+
+.loginSignUp>.background:hover{
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
+  border-radius: 5px;
+  font-weight: 500;
+  border: 1px solid black;
+
+}
+.relative{
+  position: relative;
+}
+header nav li ul{
+  padding: 20px 10px; 
+  display: none;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  border-radius: 0 0 5px 5px ;
+}
+
+
+header nav li:hover ul{
+  display: block;
+}
+
+/* section started from here */
+main{
+  margin-top: 80px;
+} 
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topBanner{
+  padding: 0 10pxtopBanner;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+.contentText{
+width: 50%;
+}
+
+.contentText>h1{
+  margin-bottom: 20px;
+}
+.contentText>p{
+  margin-bottom: 20px;
+}
+
+.contentText>button{
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  background-color: var(--font);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all .5s ease-in;
+}
+
+.contentText>button:hover{
+  background-color: transparent;
+  color: var(--font);
+  border: 1px solid var(--font);
+}
+
+.topBannerImg{
+  padding: 20px;
+  width: 50%;
+}
+
+.topBannerImg>img{
+  width: 100%;
+}
+.ani{
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.topBannerBottom{
+  margin-top: 20px;
+}
+
+/* .socialMediaIcon{
+  
+}
+.socialMediaIcon>img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+} */
+
+/* not mine */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+  
+}
+
+.logos {
+  overflow: hidden;
+  /* padding: 60px 0; */
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before, .logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 40px;
+}
+
+/* done */
+.services{
+  padding-top: 10px;
+}
+
+.topText{
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topTextButton{
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: .2s ease;
+}
+
+.topTextButton:hover{
+  background-color: var(--font);
+  border: 1px solid transparent;
+  color: var(--color);
+}
+
+.topTextButton>i{
+  margin-left: 2px;
+  font-size: 1.2rem;  
+  color: var(--font);
+  /* transform: rotate(0deg); */
+  transition: .5s ease-in-out;
+}
+
+.topTextButton:hover>i{
+  color: var(--color);
+  transform: rotate(-30deg);
+}
+.firstCard{
+  width: 20%;
+}
+.firstCard>div,h4{
+  margin-bottom: 10px;
+}
+.firstCard>p{
+  margin-bottom: 10px;
+
+}
+
+.iconBox{
+  height: 35px;
+  width: 35px;
+  /* margin-bottom: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.785);
+}
+
+.iconBox>i{
+  font-size: 1.5rem;
+  color: var(--color);
+  /* background-color: white; */
+}
+
+.textCard{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alumniTalks{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.alumniTalksContent{
+  width: 50%;
+}
+
+
+.noMArgin{
+  margin-bottom: 10px;
+}
+.aboutAvatar{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.avatarBox{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color);
+  background-color: var(--font);
+  border-radius: 5px;
+}
+
+.profileBackground{
+  margin: 2px;
+  color: var(--textcolor);
+}
+
+.showcase{
+  padding: 10px 0 50px 0 ;
+}
+.cardBox{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  margin-bottom: 20px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cardInner {
+  position: absolute;
+  top: 100%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  padding: 5px 20px;
+  color: var(--color);
+  backdrop-filter: blur(5px);
+  transition: all 0.4s ease 0s;
+}
+
+.card:hover .cardInner {
+  top: 60%;
+}
+
+/* form 
+
+.form{
+  background-color: var(--font);
+  padding: 20px 0;
+}
+
+form{
+  padding: 5px 10px;
+  border-radius: 5px 5px 0 0;
+  background-color: var(--color);
+}
+
+label::after{
+  content: "*";
+  color: red;
+  margin-left: 5px;
+
+}
+
+input{
+  width: 100%;
+  height: 1.4rem;
+}
+
+.dis{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emilIcon{
+  position: relative;
+}
+
+.emilIcon>i{
+  padding: 2px 0;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+} */
+
+.footer_container {
+  padding: 30px 20px 40px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_column h3 {
+  color: #282c3f;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.footer_column a {
+  color: #696b79;
+  font-size: 15px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.footer_column a:hover{
+  color: var(--font);
+  font-weight: 600;
+}
+
+.copyright {
+  color: #94969f;
+  text-align: end;
+  padding: 15px;
+}

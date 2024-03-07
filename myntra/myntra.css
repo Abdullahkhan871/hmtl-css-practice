@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  /* background-color: black; */
+}
+
+header{
+  width: 100%;
+  padding: 5px 30px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  /* position: relative; */
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.392);
+}
+
+.logo{
+  height: 80px;
+  width: 80px;
+}
+
+header>nav>ul{
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li{
+  list-style: none;
+}
+
+header nav ul li a{
+  color: black;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+header>nav>ul>li>a:hover:after{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+}
+.second>a:hover::after{
+  width: 65px;
+}
+
+.second>a:hover::after{
+  width: 65px;
+}
+.third>a:hover::after{
+  width: 50px;
+}
+.fourth>a:hover::after{
+  width: 120px;
+}
+
+.fifth>a:hover::after{
+  width: 65px;
+}
+.sixth>a:hover::after{
+  width: 60px;
+}
+.dropDownNav>.dropDownBar{
+  /* display: none; */
+  position: fixed;
+  top: 95px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.653);
+  padding: 0 120px;
+  /* text-align: center  ; */
+}
+
+.dropDownNav>.dropDownBar>ul{
+  padding: 10px 20px;
+  margin: 0 auto;
+  display: inline-block;
+  width: 40%;
+  background-color:red;
+  /* height: 50%; */
+}
+
+.dropDownNav>.dropDownBar>ul a{
+  text-align: center;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: lightgray;
+  transition: .5s ease;
+}
+
+.dropDownNav>.dropDownBar>ul a:hover{
+  width: 100%;
+  font-weight: 600;
+  color: black;
+}
+
+.dropDownNav>.dropDownBar{
+  display: none;
+}
+
+.dropDownNav:hover>.dropDownBar{
+  display: block;
+}
+
+.navSearch{
+  /* padding: 2px 5px; */
+  background-color: lightgray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* input:hover .navSearch{
+  background-color: white;
+} */
+
+.navSearchIcon{
+  margin-left: 5px;
+  display: inline;
+  height: 2.5rem;
+}
+.navSearchIcon>i{
+  margin-right: 5px;
+  padding-top: 10px;
+  font-size: 1.4rem;
+  color: white;
+  
+}
+
+input[type=search]:focus{
+  background-color: white;
+  outline: none;
+}
+
+/* input[type=search]:focus .navSearch {
+  background-color: white;
+} */
+
+.navSearch>input{
+  width: 500px;
+  height: 2.5rem;
+  border: none;
+  /* outline: none; */
+  text-transform: capitalize;
+  font-weight: 100;
+  background-color: transparent;
+}
+
+.navBarProfile{
+  display: flex;
+  gap: 20px;
+}
+
+.navBarProfile>.avatar{
+  text-align: center;
+  font-size: .8em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+
+.navBarProfile>.avatar>i{
+  margin-bottom: 5px;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+main{
+  margin-top: 120px;
+}
+
+.banner{
+  margin-bottom: 20px;
+}
+
+.bannerContainer{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.bannerImg>img{
+  width: 100%;
+}
+
+.secondBanner{
+  object-fit: cover;
+  height: 500px;
+}
+
+.dealsContainer{
+  padding: 0 5px;
+}
+
+.topDeals{
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+/* 
+.card::-webkit-scrollbar{
+  display: none;
+}  */
+
+.card{
+  /* height: 300px; */
+  width: 250px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.cardimg>img{
+  width: 250px;
+  height: 250px;
+  /* margin-bottom: 5px; */
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+
+}
+
+.cardLogo{
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cardLogo>img{
+  width: 25%;
+  height: 25%;
+  /* object-fit: cover; */
+}
+
+.cardText{
+  border-radius: 0 0 5px 5px;
+  background-color: orange;
+  box-shadow: inset 0px -2px 5px 2px rgba(0, 0, 0, 0.586);
+  text-align: center;
+}
+
+.catogeryCardHorizontal{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 100px; */
+}
+
+.cardColor{
+  padding: 20px 0px;
+  background-color: pink;
+  box-shadow: inset 0px -2px 5px 2px rgba(255, 67, 98, 0.388);
+
+}
+
+.bb{
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+
+/*not mei*/
+
+.footer_container {
+  padding: 30px 0px 40px 0px;
+  background: #FAFBFC;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_column h3 {
+  color: #282c3f;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.footer_column a {
+  color: #696b79;
+  font-size: 15px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.footer_column a:hover{
+  color: black;
+  font-weight: 600;
+}
+
+.copyright {
+  color: #94969f;
+  text-align: end;
+  padding: 15px;
+}
