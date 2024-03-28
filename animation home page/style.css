@@ -64,9 +64,13 @@ nav a:hover{
   color: var(--font);
 }
 
-nav>ul .loginSignUp span{
+/* nav>ul .loginSignUp span{
   margin-left: 30px;
-}
+} */
+
+/* nav > ul .loginSignUp-tab{
+  display: none;
+} */
 
 nav>ul li{
   list-style: none;
@@ -76,9 +80,12 @@ nav>ul li{
   align-items: center;
   /* justify-content: center; */
 }
+/* .navBarDropDown > .downArrow{
+  display: none;
+} */
 
 .loginSignUp .blank{
-  padding: 10px 20px;
+  padding: .5vw .5vw;
   border-radius: 5px;
   font-weight: 500;
   border: 1px solid black;
@@ -92,7 +99,7 @@ nav>ul li{
 }
 
 .loginSignUp>.background{
-  padding: 10px 20px;
+  padding: .5vw .5vw;
   background-color: var(--font);
   border-radius: 5px;
   color: white;
@@ -102,7 +109,6 @@ nav>ul li{
 }
 
 .loginSignUp>.background:hover{
-  padding: 10px 20px;
   background-color: transparent;
   color: black;
   border-radius: 5px;
@@ -140,7 +146,7 @@ main{
 }
 
 .topBanner{
-  padding: 0 10pxtopBanner;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -174,6 +180,7 @@ width: 50%;
 }
 
 .topBannerImg{
+  overflow: hidden;
   padding: 20px;
   width: 50%;
 }
@@ -475,6 +482,7 @@ input{
 .footer_container {
   padding: 30px 20px 40px 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -505,4 +513,58 @@ input{
   color: #94969f;
   text-align: end;
   padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .background{
+    display: none;
+  }
+  .topBanner{
+    padding: 0 10px;
+    display: block;
+  }
+  .contentText, .topBannerImg, .alumniTalksContent{
+    width: 100%;
+  }
+  .topBannerImg{
+    margin-top: 4vh;
+  }
+  .services{
+    padding: 0  10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .alumniTalks{
+    padding: 10px 10px;
+    flex-direction: column;
+  }
+  .order :nth-child(1){ 
+    order: 2; 
+  } 
+  .aboutAvatar2{
+    flex-direction: row-reverse;
+    justify-content: start;
+  }
+  .showcase{
+    padding: 10px 10px 50px 10px ;
+  }
+  .topTextButton-showcase{
+    margin-right: 10px;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .downTab{
+    display: none;
+  }
+  .firstCard{
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .footer_column {
+    margin-top: 10px;
+  }
+
 }
