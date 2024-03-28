@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Page</title>
+</head>
+<body>
+    <main>
+        <div class="name">
+            <h1>Job application</h1>
+            <h2 style="margin-left: 10px;">(web)</h2>
+        </div>
+        <div class="form-f">
+           <form action="#">
+            <div class="allname">
+                <div class="fname">
+                    <label for="fname">
+                        <p>First Name</p>
+                    </label>
+                    <input type="text" id="fname">
+                </div>
+                <div class="lname">
+                    <label for="lname">
+                        <p>Last Name</p>
+                    </label>
+                    <input type="text" id="lname" name="Mylname">
+                </div>
+            </div>
+            <div class="email-job">
+                <div class="email">
+                    <label for="email">
+                        <p>Email</p>
+                    </label>
+                    <input type="email" name="myemail" id="email">
+                </div>
+                <div class="job-p">
+                    <label for="job-role">
+                        <p>job role</p>
+                    </label>
+                    <select name="jobrole" id="job-role">
+                        <option value="designer">designer</option>
+                        <option value="designer">ux designer</option>
+                        <option value="designer">ui designer</option>
+                        <option value="designer">frontend designer</option>
+                        <option value="designer">backend designer</option>
+                    </select>
+                </div>
+            </div>
+                <div>
+                    <label for="feedback">
+                        <p>feedback</p>    
+                    </label>
+                    <textarea name="feedback" id="feedback" cols="114" rows="10" style="margin-bottom: 20px;"></textarea>
+                </div>
+                <div class="city-pincode">
+                    <div class="city">
+                        <label for="city">
+                            <p>city</p>
+                        </label>
+                        <input type="text" name="where-you-live" id="city">
+                    </div>
+                    <div class="pincord">
+                        <label for="pincord">
+                            <p>pincord</p>
+                        </label>
+                        <input type="text" name="area-pincord" id="pincord">
+                    </div>
+                </div>
+                <div class="date-file">
+                    <div class="date">
+                        <label for="date">
+                            <p>Start Date</p>
+                        </label>
+                        <input type="date" name="star-date" id="date">
+                    </div>
+                    <div class="fileupload">
+                        <label for="file">
+                            <p>File Upload</p>
+                        </label>
+                        <input type="file" name="fileupload" id="file" style="border: 1px solid rgba(0, 0, 0, 0.627);">
+                    </div>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="Apply Now" style="text-transform: uppercase; background-color: rgb(255, 2, 2); width: 100px; height:40px; color: aliceblue; border: none; border-radius: 10px;">
+                </div>
+           </form>
+        </div>
+    </main>
+</body>
+</html>
